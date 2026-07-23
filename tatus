@@ -1,0 +1,38 @@
+[33mcommit 09b906e72d060a7d9e7c4711443cdae6677eab1b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Raul Crisan <craulc88@yahoo.com>
+Date:   Thu Jul 23 21:36:00 2026 +0200
+
+    Final version before launch
+
+ app/admin/page.tsx                       |  68 [32m++++[m[31m---[m
+ app/api/delete/route.ts                  |  37 [32m++++[m
+ app/api/export/route.ts                  |  51 [32m++++++[m
+ app/api/register/route.ts                |   2 [31m-[m
+ app/components/DeleteButton.tsx          |  43 [32m+++++[m
+ app/components/Gallery.tsx               | 235 [32m++++++++++++++++++++++++[m
+ app/components/QualificationCard.tsx     |  44 [32m+++++[m
+ app/components/Register.tsx              |  27 [32m+[m[31m--[m
+ app/components/SearchTable.tsx           |  79 [32m++++++++[m
+ app/components/Trainer.tsx               | 297 [32m+++++++++++++++++++++++++++[m[31m----[m
+ app/components/TrainerModal.tsx          |  58 [32m++++++[m
+ app/components/TrainerPortrait.tsx       |  45 [32m+++++[m
+ app/components/Training.tsx              | 227 [32m++++++++++++++++[m[31m-------[m
+ app/components/price.tsx                 |   4 [32m+[m[31m-[m
+ app/globals.css                          |   4 [32m+[m
+ app/login/page.tsx                       |  75 [32m++++++++[m
+ app/page.tsx                             | 146 [32m+++++++++++[m[31m----[m
+ lib/server.ts                            |  25 [32m+++[m
+ lib/supabase.ts                          |   6 [32m+[m
+ lib/supabase/client.ts                   |  14 [32m++[m
+ lib/supabase/server.ts                   |  25 [32m+++[m
+ middleware.ts                            |  47 [32m+++++[m
+ package-lock.json                        | 248 [32m+++++++++++++++++++++++[m[31m---[m
+ package.json                             |   9 [32m+[m[31m-[m
+ public/certificate-sportgymnasium.svg    |  18 [32m++[m
+ public/certificate-uefa.svg              |  18 [32m++[m
+ public/hero.jpg                          | Bin [31m0[m -> [32m2376103[m bytes
+ public/images/trainer/.gitkeep           |   0
+ public/images/trainer/sportgymnasium.jpg | Bin [31m0[m -> [32m112557[m bytes
+ public/images/trainer/uefa-c-license.jpg | Bin [31m0[m -> [32m176427[m bytes
+ public/trainer-placeholder.svg           |  14 [32m++[m
+ 31 files changed, 1643 insertions(+), 223 deletions(-)
