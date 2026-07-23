@@ -1,0 +1,18 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" rx="40" fill="#F8FAFC"/>
+  <rect x="70" y="70" width="1060" height="660" rx="28" fill="url(#paint0_linear)"/>
+  <rect x="110" y="115" width="980" height="570" rx="24" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="4"/>
+  <rect x="150" y="160" width="900" height="90" rx="20" fill="#E0F2FE"/>
+  <text x="600" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#0F172A">UEFA Grassroots C Lizenz</text>
+  <text x="600" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#334155">Raul Crișan</text>
+  <text x="600" y="370" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#64748B">Ausgestellt für die erfolgreiche Teilnahme an der Ausbildung</text>
+  <rect x="260" y="430" width="680" height="180" rx="24" fill="#EFF6FF" stroke="#93C5FD" stroke-width="3"/>
+  <text x="600" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#1D4ED8">Qualifikation</text>
+  <text x="600" y="545" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#334155">Trainerausbildung im Nachwuchs- und Grassroots-Bereich</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="90" y1="90" x2="1112" y2="710" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+  </defs>
+</svg>

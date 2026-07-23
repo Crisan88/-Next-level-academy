@@ -31,7 +31,6 @@ export async function POST(req: Request) {
         parent_name: data.parentName,
         phone: data.phone,
         email: data.email,
-        group_name: data.group,
         notes: data.notes,
       },
     ]);
@@ -57,7 +56,6 @@ export async function POST(req: Request) {
         <p><strong>Părinte:</strong> ${data.parentName}</p>
         <p><strong>Telefon:</strong> ${data.phone}</p>
         <p><strong>E-mail:</strong> ${data.email}</p>
-        <p><strong>Grupa:</strong> ${data.group}</p>
         <p><strong>Observații:</strong> ${data.notes}</p>
       `,
     });

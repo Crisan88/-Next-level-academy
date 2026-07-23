@@ -47,9 +47,7 @@ export default function Price() {
           </div>
 
           <a
-            href="https://wa.me/4915906419166"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#register"
             className="mt-10 inline-block bg-red-600 hover:bg-red-700 px-10 py-4 rounded-xl font-bold transition"
           >
             Jetzt anmelden
