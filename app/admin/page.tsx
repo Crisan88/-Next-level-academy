@@ -1,6 +1,19 @@
+import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/server";
 import SearchTable from "../components/SearchTable";
+
+export const metadata: Metadata = {
+  title: "Admin – Next Level Academy",
+  description: "Verwalten Sie Anmeldungen und Einträge im Admin-Bereich der Next Level Academy.",
+  robots: {
+    index: false,
+    follow: false,
+  },
+  alternates: {
+    canonical: "https://nextlevelacademy-fussball.de/admin",
+  },
+};
 
 export default async function AdminPage() {
   const supabase = await createClient();

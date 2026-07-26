@@ -1,10 +1,30 @@
-import Image from "next/image";
+import type { Metadata } from "next";
 import { Mail, MessageCircle, Phone } from "lucide-react";
 import Navbar from "./components/navbar";
 import Training from "./components/Training";
 import Trainer from "./components/Trainer";
 import Price from "./components/price";
 import Register from "./components/Register";
+
+export const metadata: Metadata = {
+  title: "Startseite – Next Level Academy",
+  description:
+    "Kostenloses Probetraining und professionelles Fußballtraining für Kinder in Muhr am See. Jetzt anmelden!",
+  alternates: {
+    canonical: "https://nextlevelacademy-fussball.de/",
+  },
+  openGraph: {
+    title: "Next Level Academy – Fußballschule für Kinder",
+    description:
+      "Kostenloses Probetraining und professionelles Fußballtraining für Kinder in Muhr am See.",
+    url: "https://nextlevelacademy-fussball.de/",
+  },
+  twitter: {
+    title: "Next Level Academy – Fußballschule für Kinder",
+    description:
+      "Kostenloses Probetraining und professionelles Fußballtraining für Kinder in Muhr am See.",
+  },
+};
 
 export default function Home() {
   return (
