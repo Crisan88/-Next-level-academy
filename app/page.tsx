@@ -1,4 +1,3 @@
-```tsx
 import type { Metadata } from "next";
 import { Mail, MessageCircle, Phone } from "lucide-react";
 import Navbar from "./components/navbar";
@@ -50,9 +49,11 @@ export default function Home() {
           <div className="relative z-10 mx-auto flex min-h-[calc(100vh-6rem)] max-w-7xl items-center">
             <div className="grid w-full gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
               <div className="max-w-2xl text-left">
-                <div className="inline-flex items-center rounded-full border border-blue-400/40 bg-blue-500/10 px-4 py-2 text-sm font-semibold text-blue-200 backdrop-blur-sm">
-                  <span className="mr-2">⚽</span>
-                  Montag & Freitag | 17:00–18:10 Uhr
+                <div className="inline-flex flex-wrap items-center gap-2 rounded-full border border-blue-400/40 bg-blue-500/10 px-4 py-2 text-sm font-semibold text-blue-200 backdrop-blur-sm">
+                  <span>⚽</span>
+                  <span>Montag: 17:00–18:10 Uhr</span>
+                  <span className="text-blue-400">|</span>
+                  <span>Freitag: 15:00–16:10 Uhr</span>
                 </div>
 
                 <h1 className="mt-6 text-5xl font-black tracking-tight text-white sm:text-6xl lg:text-7xl">
@@ -65,7 +66,8 @@ export default function Home() {
 
                 <p className="mt-4 max-w-xl text-base text-slate-300 sm:text-lg">
                   Professionelles Fußballtraining für Kinder von 7 bis 13 Jahren.
-                  Technik, Schnelligkeit, Koordination und Spielintelligenz – individuell gefördert in kleinen Gruppen.
+                  Technik, Schnelligkeit, Koordination und Spielintelligenz –
+                  individuell gefördert in kleinen Gruppen.
                 </p>
 
                 <div className="mt-8 flex flex-wrap gap-4">
@@ -104,47 +106,52 @@ export default function Home() {
                   </p>
 
                   <h2 className="mt-3 text-2xl font-bold text-white">
-                    Professionelles Training mit Leidenschaft, Struktur und individueller Förderung.
+                    Professionelles Training mit Leidenschaft, Struktur und
+                    individueller Förderung.
                   </h2>
 
                   <div className="mt-6 space-y-3">
-                    <div className="rounded-2xl border border-white/10 bg-white/5 p-4 transition duration-300 hover:-translate-y-1 hover:bg-blue-500/10">
+                    <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
                       <div className="mb-2 text-2xl text-blue-400">🏆</div>
                       <h3 className="font-semibold text-white">
                         Individuelle Förderung
                       </h3>
                       <p className="mt-1 text-sm leading-6 text-slate-300">
-                        Jedes Kind erhält ein altersgerechtes und individuelles Training, abgestimmt auf seine Stärken und Entwicklung.
+                        Jedes Kind erhält ein altersgerechtes und individuelles
+                        Training, abgestimmt auf seine Stärken und Entwicklung.
                       </p>
                     </div>
 
-                    <div className="rounded-2xl border border-white/10 bg-white/5 p-4 transition duration-300 hover:-translate-y-1 hover:bg-blue-500/10">
+                    <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
                       <div className="mb-2 text-2xl text-blue-400">📜</div>
                       <h3 className="font-semibold text-white">
                         Lizenzierter Trainer
                       </h3>
                       <p className="mt-1 text-sm leading-6 text-slate-300">
-                        Training mit einem lizenzierten Trainer und langjähriger Erfahrung im Leistungsfußball.
+                        Training mit einem lizenzierten Trainer und langjähriger
+                        Erfahrung im Leistungsfußball.
                       </p>
                     </div>
 
-                    <div className="rounded-2xl border border-white/10 bg-white/5 p-4 transition duration-300 hover:-translate-y-1 hover:bg-blue-500/10">
+                    <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
                       <div className="mb-2 text-2xl text-blue-400">⚽</div>
                       <h3 className="font-semibold text-white">
                         Kleine Gruppen
                       </h3>
                       <p className="mt-1 text-sm leading-6 text-slate-300">
-                        Mehr Ballkontakte, persönliche Betreuung und schnellere Entwicklung durch kleine Trainingsgruppen.
+                        Mehr Ballkontakte, persönliche Betreuung und schnellere
+                        Entwicklung durch kleine Trainingsgruppen.
                       </p>
                     </div>
 
-                    <div className="rounded-2xl border border-white/10 bg-white/5 p-4 transition duration-300 hover:-translate-y-1 hover:bg-blue-500/10">
+                    <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
                       <div className="mb-2 text-2xl text-blue-400">🔥</div>
                       <h3 className="font-semibold text-white">
                         Spaß & Motivation
                       </h3>
                       <p className="mt-1 text-sm leading-6 text-slate-300">
-                        Eine positive Trainingsatmosphäre, die Kinder motiviert, selbstbewusst und mit Freude Fußball zu spielen.
+                        Eine positive Trainingsatmosphäre, die Kinder motiviert,
+                        selbstbewusst und mit Freude Fußball zu spielen.
                       </p>
                     </div>
                   </div>
@@ -155,11 +162,8 @@ export default function Home() {
         </section>
 
         <Training />
-
         <Trainer />
-
         <Price />
-
         <Register />
 
         <section
@@ -175,7 +179,8 @@ export default function Home() {
                   </p>
 
                   <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
-                    Haben Sie Fragen oder möchten Sie ein kostenloses Probetraining vereinbaren?
+                    Haben Sie Fragen oder möchten Sie ein kostenloses
+                    Probetraining vereinbaren?
                   </h2>
 
                   <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-300">
@@ -193,7 +198,6 @@ export default function Home() {
                           <p className="text-sm uppercase tracking-[0.2em] text-slate-400">
                             E-Mail
                           </p>
-
                           <a
                             href="mailto:craulc88@yahoo.com"
                             className="mt-1 block text-lg font-semibold text-white transition hover:text-red-300"
@@ -214,7 +218,6 @@ export default function Home() {
                           <p className="text-sm uppercase tracking-[0.2em] text-slate-400">
                             Telefon
                           </p>
-
                           <a
                             href="tel:+4915906419166"
                             className="mt-1 block text-lg font-semibold text-white transition hover:text-red-300"
@@ -229,26 +232,33 @@ export default function Home() {
 
                 <div className="rounded-[1.5rem] border border-emerald-400/20 bg-emerald-500/10 p-6 sm:p-8">
                   <div className="flex items-center gap-3">
-                    <div className="rounded-full bg-emerald-500/20 p-2 text-emerald-300">
-                      <MessageCircle className="h-5 w-5" />
+                    <div className="rounded-full bg-emerald-400/15 p-3 text-emerald-300">
+                      <MessageCircle className="h-6 w-6" />
                     </div>
 
-                    <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-300">
-                      WhatsApp
-                    </p>
+                    <div>
+                      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-300">
+                        WhatsApp
+                      </p>
+                      <h3 className="mt-1 text-xl font-bold text-white">
+                        Schnell und unkompliziert schreiben
+                      </h3>
+                    </div>
                   </div>
 
-                  <p className="mt-3 text-base leading-7 text-slate-300">
-                    Wir sind gerne für Sie da und helfen Ihnen bei Fragen rund um Training, Anmeldung oder Terminvereinbarung.
+                  <p className="mt-5 leading-7 text-slate-300">
+                    Schreiben Sie uns direkt auf WhatsApp und vereinbaren Sie
+                    ein kostenloses Probetraining.
                   </p>
 
                   <a
-                    href="https://wa.me/4915906419166?text=Hallo!%20Ich%20interessiere%20mich%20für%20ein%20kostenloses%20Probetraining%20bei%20der%20Next%20Level%20Academy."
+                    href="https://wa.me/4915906419166"
                     target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-6 inline-flex items-center justify-center rounded-full bg-emerald-500 px-6 py-3 font-semibold text-white shadow-lg shadow-emerald-500/20 transition duration-300 hover:-translate-y-1 hover:bg-emerald-400"
+                    rel="noreferrer"
+                    className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-emerald-500 px-6 py-4 font-semibold text-white transition hover:-translate-y-1 hover:bg-emerald-400"
                   >
-                    Jetzt auf WhatsApp schreiben
+                    <MessageCircle className="h-5 w-5" />
+                    Auf WhatsApp schreiben
                   </a>
                 </div>
               </div>
@@ -259,6 +269,3 @@ export default function Home() {
     </>
   );
 }
-```
-
-Asta este varianta completă a fișierului tău, iar singura modificare de conținut este programul din partea de sus: **Montag & Freitag | 17:00–18:10 Uhr**.

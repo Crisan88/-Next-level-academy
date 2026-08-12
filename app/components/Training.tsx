@@ -1,4 +1,3 @@
-```tsx
 "use client";
 
 import { motion } from "framer-motion";
@@ -89,9 +88,7 @@ export default function Training() {
                       <Icon className="h-5 w-5" />
                     </div>
 
-                    <p className="font-semibold text-white">
-                      {item.title}
-                    </p>
+                    <p className="font-semibold text-white">{item.title}</p>
                   </motion.div>
                 );
               })}
@@ -127,13 +124,8 @@ export default function Training() {
                   <Icon className="h-5 w-5" />
                 </div>
 
-                <p className="text-lg font-semibold text-white">
-                  {stat.value}
-                </p>
-
-                <p className="mt-1 text-sm text-slate-400">
-                  {stat.label}
-                </p>
+                <p className="text-lg font-semibold text-white">{stat.value}</p>
+                <p className="mt-1 text-sm text-slate-400">{stat.label}</p>
               </motion.div>
             );
           })}
@@ -153,17 +145,42 @@ export default function Training() {
               </p>
 
               <h3 className="mt-3 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                Montag & Freitag
+                Unsere Trainingszeiten
               </h3>
 
-              <p className="mt-4 text-2xl font-semibold text-blue-300 sm:text-3xl">
-                17:00–18:10 Uhr
-              </p>
+              <div className="mt-6 rounded-[1.5rem] border border-blue-400/20 bg-blue-500/5 p-5">
+                <div className="flex items-center gap-3">
+                  <div className="inline-flex rounded-xl bg-blue-500/10 p-2 text-blue-300">
+                    <Clock3 className="h-5 w-5" />
+                  </div>
 
-              <p className="mt-4 max-w-xl text-base leading-7 text-slate-300">
-                Ein strukturierter Trainingsblock für Kinder, die sich
-                technisch weiterentwickeln und gleichzeitig Spaß am Fußball
-                haben möchten.
+                  <div>
+                    <p className="text-lg font-bold text-white">Montag</p>
+                    <p className="text-xl font-semibold text-blue-300">
+                      17:00–18:10 Uhr
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-4 rounded-[1.5rem] border border-red-400/20 bg-red-500/5 p-5">
+                <div className="flex items-center gap-3">
+                  <div className="inline-flex rounded-xl bg-red-500/10 p-2 text-red-300">
+                    <Clock3 className="h-5 w-5" />
+                  </div>
+
+                  <div>
+                    <p className="text-lg font-bold text-white">Freitag</p>
+                    <p className="text-xl font-semibold text-blue-300">
+                      17:00-18:10 Uhr
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <p className="mt-5 max-w-xl text-base leading-7 text-slate-300">
+                Ein strukturierter Trainingsblock für Kinder, die sich technisch
+                weiterentwickeln und gleichzeitig Spaß am Fußball haben möchten.
               </p>
             </div>
 
@@ -191,7 +208,7 @@ export default function Training() {
           className="mt-10 flex justify-center"
         >
           <motion.a
-            href="#register"
+            href="#anmeldung"
             whileHover={{ y: -3, scale: 1.01 }}
             whileTap={{ scale: 0.98 }}
             className="inline-flex items-center gap-3 rounded-full border border-blue-400/30 bg-gradient-to-r from-blue-600 to-cyan-500 px-7 py-3.5 text-sm font-semibold text-white shadow-[0_16px_45px_rgba(37,99,235,0.28)] transition"
@@ -204,13 +221,3 @@ export default function Training() {
     </section>
   );
 }
-```
-
-Acum trebuie să faci **Save (`Ctrl + S`)**, apoi să verifici site-ul.
-
-Ar trebui să apară:
-
-**Montag & Freitag**
-**17:00–18:10 Uhr**
-
-în secțiunea **Trainingszeit**.
