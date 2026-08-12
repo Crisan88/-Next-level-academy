@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Mail, MessageCircle, Phone } from "lucide-react";
-import Navbar from "./components/navbar";
-import Training from "./components/Training";
-import Trainer from "./components/Trainer";
-import Price from "./components/price";
-import Register from "./components/Register";
+import Navbar from "../components/navbar";
+import Training from "../components/Training";
+import Trainer from "../components/Trainer";
+import Price from "../components/price";
+import Register from "../components/Register";
 
 export const metadata: Metadata = {
   title: "Startseite – Next Level Academy",
