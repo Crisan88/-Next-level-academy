@@ -53,7 +53,7 @@ export default function Home() {
                   <span>⚽</span>
                   <span>Montag: 17:00–18:10 Uhr</span>
                   <span className="text-blue-400">|</span>
-                  <span>Freitag: 15:00–16:10 Uhr</span>
+                  <span>Freitag: 17:00–18:10 Uhr</span>
                 </div>
 
                 <h1 className="mt-6 text-5xl font-black tracking-tight text-white sm:text-6xl lg:text-7xl">
