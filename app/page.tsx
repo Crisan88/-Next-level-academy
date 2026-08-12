@@ -1,3 +1,4 @@
+```tsx
 import type { Metadata } from "next";
 import { Mail, MessageCircle, Phone } from "lucide-react";
 import Navbar from "./components/navbar";
@@ -43,6 +44,7 @@ export default function Home() {
               backgroundRepeat: "no-repeat",
             }}
           />
+
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(37,99,235,0.3),_transparent_45%)]" />
 
           <div className="relative z-10 mx-auto flex min-h-[calc(100vh-6rem)] max-w-7xl items-center">
@@ -50,7 +52,7 @@ export default function Home() {
               <div className="max-w-2xl text-left">
                 <div className="inline-flex items-center rounded-full border border-blue-400/40 bg-blue-500/10 px-4 py-2 text-sm font-semibold text-blue-200 backdrop-blur-sm">
                   <span className="mr-2">⚽</span>
-                  Freitag | 17:00–18:10 Uhr
+                  Montag & Freitag | 17:00–18:10 Uhr
                 </div>
 
                 <h1 className="mt-6 text-5xl font-black tracking-tight text-white sm:text-6xl lg:text-7xl">
@@ -100,6 +102,7 @@ export default function Home() {
                   <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-300">
                     Warum Next Level Academy?
                   </p>
+
                   <h2 className="mt-3 text-2xl font-bold text-white">
                     Professionelles Training mit Leidenschaft, Struktur und individueller Förderung.
                   </h2>
@@ -107,7 +110,9 @@ export default function Home() {
                   <div className="mt-6 space-y-3">
                     <div className="rounded-2xl border border-white/10 bg-white/5 p-4 transition duration-300 hover:-translate-y-1 hover:bg-blue-500/10">
                       <div className="mb-2 text-2xl text-blue-400">🏆</div>
-                      <h3 className="font-semibold text-white">Individuelle Förderung</h3>
+                      <h3 className="font-semibold text-white">
+                        Individuelle Förderung
+                      </h3>
                       <p className="mt-1 text-sm leading-6 text-slate-300">
                         Jedes Kind erhält ein altersgerechtes und individuelles Training, abgestimmt auf seine Stärken und Entwicklung.
                       </p>
@@ -115,7 +120,9 @@ export default function Home() {
 
                     <div className="rounded-2xl border border-white/10 bg-white/5 p-4 transition duration-300 hover:-translate-y-1 hover:bg-blue-500/10">
                       <div className="mb-2 text-2xl text-blue-400">📜</div>
-                      <h3 className="font-semibold text-white">Lizenzierter Trainer</h3>
+                      <h3 className="font-semibold text-white">
+                        Lizenzierter Trainer
+                      </h3>
                       <p className="mt-1 text-sm leading-6 text-slate-300">
                         Training mit einem lizenzierten Trainer und langjähriger Erfahrung im Leistungsfußball.
                       </p>
@@ -123,7 +130,9 @@ export default function Home() {
 
                     <div className="rounded-2xl border border-white/10 bg-white/5 p-4 transition duration-300 hover:-translate-y-1 hover:bg-blue-500/10">
                       <div className="mb-2 text-2xl text-blue-400">⚽</div>
-                      <h3 className="font-semibold text-white">Kleine Gruppen</h3>
+                      <h3 className="font-semibold text-white">
+                        Kleine Gruppen
+                      </h3>
                       <p className="mt-1 text-sm leading-6 text-slate-300">
                         Mehr Ballkontakte, persönliche Betreuung und schnellere Entwicklung durch kleine Trainingsgruppen.
                       </p>
@@ -131,7 +140,9 @@ export default function Home() {
 
                     <div className="rounded-2xl border border-white/10 bg-white/5 p-4 transition duration-300 hover:-translate-y-1 hover:bg-blue-500/10">
                       <div className="mb-2 text-2xl text-blue-400">🔥</div>
-                      <h3 className="font-semibold text-white">Spaß & Motivation</h3>
+                      <h3 className="font-semibold text-white">
+                        Spaß & Motivation
+                      </h3>
                       <p className="mt-1 text-sm leading-6 text-slate-300">
                         Eine positive Trainingsatmosphäre, die Kinder motiviert, selbstbewusst und mit Freude Fußball zu spielen.
                       </p>
@@ -151,7 +162,10 @@ export default function Home() {
 
         <Register />
 
-        <section id="kontakt" className="border-t border-white/10 bg-slate-950 px-6 py-24 sm:px-8 lg:px-12">
+        <section
+          id="kontakt"
+          className="border-t border-white/10 bg-slate-950 px-6 py-24 sm:px-8 lg:px-12"
+        >
           <div className="mx-auto max-w-6xl">
             <div className="rounded-[2rem] border border-red-500/20 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-950 p-8 shadow-2xl shadow-black/30 backdrop-blur-xl sm:p-10 lg:p-14">
               <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
@@ -159,9 +173,11 @@ export default function Home() {
                   <p className="text-sm font-semibold uppercase tracking-[0.3em] text-red-400">
                     Kontakt
                   </p>
+
                   <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
                     Haben Sie Fragen oder möchten Sie ein kostenloses Probetraining vereinbaren?
                   </h2>
+
                   <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-300">
                     Kontaktieren Sie uns – wir freuen uns auf Ihre Nachricht!
                   </p>
@@ -172,10 +188,12 @@ export default function Home() {
                         <div className="rounded-full bg-red-500/10 p-2 text-red-400">
                           <Mail className="h-5 w-5" />
                         </div>
+
                         <div>
                           <p className="text-sm uppercase tracking-[0.2em] text-slate-400">
                             E-Mail
                           </p>
+
                           <a
                             href="mailto:craulc88@yahoo.com"
                             className="mt-1 block text-lg font-semibold text-white transition hover:text-red-300"
@@ -191,10 +209,12 @@ export default function Home() {
                         <div className="rounded-full bg-red-500/10 p-2 text-red-400">
                           <Phone className="h-5 w-5" />
                         </div>
+
                         <div>
                           <p className="text-sm uppercase tracking-[0.2em] text-slate-400">
                             Telefon
                           </p>
+
                           <a
                             href="tel:+4915906419166"
                             className="mt-1 block text-lg font-semibold text-white transition hover:text-red-300"
@@ -212,10 +232,12 @@ export default function Home() {
                     <div className="rounded-full bg-emerald-500/20 p-2 text-emerald-300">
                       <MessageCircle className="h-5 w-5" />
                     </div>
+
                     <p className="text-sm font-semibold uppercase tracking-[0.3em] text-emerald-300">
                       WhatsApp
                     </p>
                   </div>
+
                   <p className="mt-3 text-base leading-7 text-slate-300">
                     Wir sind gerne für Sie da und helfen Ihnen bei Fragen rund um Training, Anmeldung oder Terminvereinbarung.
                   </p>
@@ -233,8 +255,10 @@ export default function Home() {
             </div>
           </div>
         </section>
-
       </main>
     </>
   );
 }
+```
+
+Asta este varianta completă a fișierului tău, iar singura modificare de conținut este programul din partea de sus: **Montag & Freitag | 17:00–18:10 Uhr**.
