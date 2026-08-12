@@ -98,7 +98,7 @@ export default function Register() {
               </p>
 
               <p className="text-blue-300">
-                🕒 15:00–16:10 Uhr
+                🕒 17:00–18:10 Uhr
               </p>
             </div>
 
